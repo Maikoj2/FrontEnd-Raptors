@@ -1,0 +1,29 @@
+<div class="row "  *ngFor="let item of Instagram">
+  <!-- blog post card -->
+  <div class="art-a art-blog-card card-sidebar" >
+    <!-- post cover -->
+    <a href="{{item.media_url}}" *ngIf="validarTipoarchivo(item.media_type)" class="art-port-cover">
+      <!-- img -->
+      <img src="{{item. media_url}}" alt="blog post">
+
+    </a>
+    <video width="252" height="152" *ngIf="!validarTipoarchivo(item.media_type)" controls="" name="media">
+      <source src="{{item.media_url}}" type="video/mp4">
+    </video>
+    <!-- post cover end -->
+    <!-- post description -->
+    <div class="art-post-description">
+      <!-- title -->
+      <a href="#.">
+        <h5 class="mb-15">{{item.username}}</h5>
+      </a>
+      <!-- text -->
+      <div class="mb-15">{{item.caption}}</div>
+      <!-- link -->
+      <a href="{{item.permalink}}" class="art-link art-color-link art-w-chevron">Ver publicacion</a>
+    </div>
+    <!-- post description end -->
+  </div>
+  <!-- blog post card end -->
+
+</div>

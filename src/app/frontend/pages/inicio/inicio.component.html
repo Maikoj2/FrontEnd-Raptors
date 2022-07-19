@@ -1,0 +1,728 @@
+<!-- container -->
+<div class="container-fluid">
+
+  <!-- row -->
+  <div class="row p-60-0 p-lg-30-0 p-md-15-0">
+    <!-- col -->
+    <div class="col-lg-12">
+
+      <!-- banner -->
+      <div class="art-a art-banner" style="background-image: url(../../../../assets/img/bg.jpg);">
+        <!-- banner back -->
+        <div class="art-banner-back"></div>
+        <!-- banner dec -->
+        <div class="art-banner-dec"></div>
+        <!-- banner overlay -->
+        <div class="art-banner-overlay">
+          <!-- main title -->
+          <div class="art-banner-title">
+            <!-- title -->
+            <h1 class="mb-15">Raptors<br> Volley Club</h1>
+            <!-- suptitle -->
+            <div class="art-lg-text art-code mb-25"> Ven y Descubre... <span class="txt-rotate" data-period="2000"
+                data-rotate='[ "Hasta Donde Puedes llegar.", "tus limites.", "tus paciones.", "lo que vales." ]'></span>
+            </div>
+            <div class="art-buttons-frame">
+              <!-- button -->
+              <a href="#." class="art-btn art-btn-md"><span>Conocenos</span></a>
+            </div>
+          </div>
+          <!-- main title end -->
+          <!-- photo -->
+          <img src="../../../../assets/img/1.png" class="art-banner-photo" alt="Your Name">
+        </div>
+        <!-- banner overlay end -->
+      </div>
+      <!-- banner end -->
+
+    </div>
+    <!-- col end -->
+  </div>
+  <!-- row end -->
+
+</div>
+<!-- container end -->
+<!-- contadores de tiempo de existencia, clases, -->
+<div class="container-fluid">
+  <!-- row -->
+  <div class="row p-30-0">
+    <!-- col -->
+    <div class="col-md-3 col-6">
+      <!-- couner frame -->
+      <div class="art-counter-frame">
+        <!-- counter -->
+        <div class="art-counter-box">
+          <!-- counter number -->
+          <span class="art-counter">2</span>
+        </div>
+        <!-- counter end -->
+        <!-- title -->
+        <h6>Años de existencia</h6>
+      </div>
+      <!-- couner frame end -->
+
+    </div>
+    <!-- col end -->
+
+    <!-- col -->
+    <div class="col-md-3 col-6">
+
+      <!-- couner frame -->
+      <div class="art-counter-frame">
+        <!-- counter -->
+        <div class="art-counter-box">
+          <!-- counter number -->
+          <span class="art-counter">32</span>
+        </div>
+        <!-- counter end -->
+        <!-- title -->
+        <h6>Alumnos</h6>
+      </div>
+      <!-- couner frame end -->
+
+    </div>
+    <!-- col end -->
+
+    <!-- col -->
+    <div class="col-md-3 col-6">
+
+      <!-- couner frame -->
+      <div class="art-counter-frame">
+        <!-- counter -->
+        <div class="art-counter-box">
+          <!-- counter number -->
+          <span class="art-counter">2</span>
+        </div>
+        <!-- counter end -->
+        <!-- title -->
+        <h6>Grupos de competecia</h6>
+      </div>
+      <!-- couner frame end -->
+
+    </div>
+    <!-- col end -->
+
+    <!-- col -->
+    <div class="col-md-3 col-6">
+
+      <!-- couner frame -->
+      <div class="art-counter-frame">
+        <!-- counter -->
+        <div class="art-counter-box">
+          <!-- counter number -->
+          <span class="art-counter">5</span><span class="art-counter-plus">+</span>
+        </div>
+        <!-- counter end -->
+        <!-- title -->
+        <h6>Campeonatos participados</h6>
+      </div>
+      <!-- couner frame end -->
+
+    </div>
+    <!-- col end -->
+
+  </div>
+  <!-- row end -->
+
+</div>
+<!-- container end -->
+
+
+<!-- Grupos de entrenamientos  a clases-->
+<div class="container-fluid">
+
+  <!-- row -->
+  <div class="row">
+
+    <!-- columna del titulo -->
+    <div class="col-lg-12">
+
+      <!-- section title -->
+      <app-titulos-container [title]="Titulos[0]"></app-titulos-container>
+      <!-- section title end -->
+
+    </div>
+    <!-- col end -->
+
+    <!-- Tarjetas de clases -->
+    <div class="col-lg-4 col-md-6" *ngFor="let cart of cartPrice">
+
+      <!-- service -->
+      <div class="art-a art-service-icon-box">
+        <!-- service content -->
+        <div class="art-service-ib-content">
+          <!-- title -->
+          <h5 class="mb-15">{{cart.NombreClase | titlecase}}</h5>
+          <!-- text -->
+          <div class="mb-15">{{cart.Descipcion}}</div>
+          <!-- button -->
+          <div class="art-buttons-frame"><a href="#." class="art-link art-color-link art-w-chevron">Me interesa</a>
+          </div>
+        </div>
+        <!-- service content end -->
+      </div>
+      <!-- service end -->
+
+    </div>
+
+
+  </div>
+  <!-- row end -->
+
+</div>
+<!-- container end -->
+
+<!-- PLanes y precios -->
+<div class="container-fluid">
+
+  <!-- row -->
+  <div class="row p-0-0">
+
+    <!-- titulo -->
+    <div class="col-lg-12">
+
+      <!-- section title -->
+      <app-titulos-container [title]="Titulos[1]"></app-titulos-container>
+      <!-- section title end -->
+
+    </div>
+    <!-- col end -->
+
+    <!-- col -->
+    <div class="col-lg-4">
+
+      <!-- price -->
+      <div class="art-a art-price">
+        <!-- price body -->
+        <div class="art-price-body">
+          <h5 class="mb-30">Precio por Horas</h5>
+          <!-- price cost -->
+          <div class="art-price-cost">
+            <div class="art-number"><span>$</span>3.000<span>h</span></div>
+          </div>
+          <!-- price cost end -->
+          <!-- price list -->
+          <ul class="art-price-list">
+            <!-- list item -->
+            <li>Entranmiendo</li>
+            <!-- list item -->
+            <li>participar en juegos de practicas</li>
+            <!-- list item -->
+            <li class="art-empty-item">uniforme</li>
+            <!-- list item -->
+            <li class="art-empty-item">participar en Campeonatos</li>
+            <!-- list item -->
+            <li class="art-empty-item">uniforme de presentacion</li>
+          </ul>
+          <!-- price list end -->
+          <!-- button -->
+          <a href="#." class="art-link art-color-link art-w-chevron">Me interesa</a>
+          <div class="art-asterisk"><sup>*</sup>Puede comprar el uniforme pagandolo aparte</div>
+        </div>
+        <!-- price body end -->
+      </div>
+      <!-- price end -->
+
+    </div>
+    <!-- grid -->
+
+    <!-- col -->
+    <div class="col-lg-4">
+
+      <!-- price -->
+      <div class="art-a art-price art-popular-price">
+        <!-- price body -->
+        <div class="art-price-body">
+          <h5 class="mb-30">Precio mensual</h5>
+          <!-- price cost -->
+          <div class="art-price-cost">
+            <div class="art-number"><span>$</span>40.000<span>m</span></div>
+          </div>
+          <!-- price cost end -->
+          <!-- price list -->
+          <ul class="art-price-list">
+            <!-- list item -->
+            <li>Entranmiendo</li>
+            <!-- list item -->
+            <li>participar en juegos de practicas</li>
+            <!-- list item -->
+            <li>participar en Campeonatos</li>
+            <!-- list item -->
+            <li class="art-empty-item">Uniforme de juego</li>
+            <!-- list item -->
+            <li class="art-empty-item">Uniforme de presentacion</li>
+          </ul>
+          <!-- price list end -->
+          <!-- button -->
+          <a href="#." class="art-link art-color-link art-w-chevron">Me interesa</a>
+        </div>
+        <!-- price body end -->
+      </div>
+      <!-- price end -->
+
+    </div>
+    <!-- col end -->
+
+    <!-- col -->
+    <div class="col-lg-4">
+
+      <!-- price -->
+      <div class="art-a art-price">
+        <!-- price body -->
+        <div class="art-price-body">
+          <h5 class="mb-30"> Precio anual</h5>
+          <!-- price cost -->
+          <div class="art-price-cost">
+            <div class="art-number"><span>$</span>390.000<span>a</span></div>
+          </div>
+          <!-- price cost end -->
+          <!-- price list -->
+          <ul class="art-price-list">
+            <!-- list item -->
+            <li>Entranmiendo</li>
+            <!-- list item -->
+            <li>participar en juegos de practicas</li>
+            <!-- list item -->
+            <li>participar en Campeonatos</li>
+            <!-- list item -->
+            <li>Uniforme de juego</li>
+            <!-- list item -->
+            <li>Uniforme de presentacion</li>
+          </ul>
+          <!-- price list end -->
+          <!-- button -->
+          <a href="#." class="art-link art-color-link art-w-chevron">Me interesa</a>
+        </div>
+        <!-- price body end -->
+      </div>
+      <!-- price end -->
+
+    </div>
+    <!-- col end -->
+
+  </div>
+  <!-- row end -->
+
+</div>
+<!-- container end -->
+
+<!-- Galeria -->
+<div class="container-fluid">
+
+  <!-- row -->
+  <div class="row p-30-0">
+
+    <!-- col -->
+    <div class="col-lg-12">
+      <!-- section title -->
+      <app-titulos-container [title]="Titulos[3]"></app-titulos-container>
+      <!-- section title end -->
+
+    </div>
+    <!-- col end -->
+    <!-- col -->
+    <div class="col-lg-12">
+
+      <!-- section title -->
+      <div class="art-section-title">
+        <!-- title frame -->
+        <div class="art-title-frame">
+          <!-- title -->
+          <h4>Nuestro trabajo</h4>
+        </div>
+        <!-- title frame end -->
+        <!-- right frame -->
+        <div class="art-right-frame">
+          <!-- filter -->
+          <div class="art-filter">
+            <!-- filter link -->
+            <a href="#" data-filter="*" class="art-link art-current">All Categories</a>
+            <!-- filter link -->
+            <a href="#" data-filter=".webTemplates" class="art-link">entrenamientos</a>
+            <!-- filter link -->
+            <a href="#" data-filter=".logos" class="art-link">Campeonatos</a>
+            <!-- filter link -->
+            <a href="#" data-filter=".drawings" class="art-link">femeninos</a>
+            <!-- filter link -->
+            <a href="#" data-filter=".ui" class="art-link">Masculinos</a>
+          </div>
+          <!-- filter end -->
+        </div>
+        <!-- right frame end -->
+      </div>
+      <!-- section title end -->
+
+    </div>
+    <!-- col end -->
+
+    <div class="art-grid art-grid-3-col art-gallery">
+      
+
+
+      <!-- grid item -->
+      <div class="art-grid-item webTemplates" *ngFor="let item of Galeria">
+        <!-- grid item frame -->
+        <a data-fancybox="gallery" href="../../../../assets/img/works/original-size/1.jpg"
+          class="art-a art-portfolio-item-frame art-horizontal">
+          <!-- img -->
+          <img src="../../../../assets/img/works/thumbnail/1.jpg" alt="item">
+          <!-- zoom icon -->
+          <span class="art-item-hover"><i class="fas fa-expand"></i></span>
+        </a>
+        <!-- grid item frame end -->
+        <!-- description -->
+        <div class="art-item-description">
+          <!-- title -->
+          <h5 class="mb-15"></h5>
+          <!-- button -->
+          <a href="#." class="art-link art-color-link art-w-chevron">Ver album completos</a>
+        </div>
+        <!-- description end -->
+
+      </div>
+      <!-- grid item end -->
+
+    </div>
+
+  </div>
+  <!-- row end -->
+
+</div>
+<!-- container end -->
+
+<!-- container -->
+<div class="container-fluid">
+
+  <!-- row -->
+  <div class="row">
+
+    <!-- col -->
+    <div class="col-lg-12">
+    <!-- section title -->
+    <app-titulos-container [title]="Titulos[2]"></app-titulos-container>
+    <!-- section title end -->
+    </div>
+    <!-- col end -->
+
+    <!-- col -->
+    <div class="col-lg-12">
+
+      <!-- slider container -->
+      <div class="swiper-container art-blog-slider" style="overflow: visible">
+        <!-- slider wrapper -->
+        <div class="swiper-wrapper">
+          <!-- slide -->
+          <div class="swiper-slide">
+
+            <!-- blog post card -->
+            <div class="art-a art-blog-card">
+              <!-- post cover -->
+              <a href="#." class="art-port-cover">
+                <!-- img -->
+                <img src="img/blog/1.jpg" alt="blog post">
+              </a>
+              <!-- post cover end -->
+              <!-- post description -->
+              <div class="art-post-description">
+                <!-- title -->
+                <a href="#.">
+                  <h5 class="mb-15">Blog post title</h5>
+                </a>
+                <!-- text -->
+                <div class="mb-15">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet!</div>
+                <!-- link -->
+                <a href="#." class="art-link art-color-link art-w-chevron">Read more</a>
+              </div>
+              <!-- post description end -->
+            </div>
+            <!-- blog post card end -->
+
+          </div>
+          <!-- slide end -->
+          <!-- slide -->
+          <div class="swiper-slide">
+
+            <!-- blog post card -->
+            <div class="art-a art-blog-card">
+              <!-- post cover -->
+              <a href="#." class="art-port-cover">
+                <!-- img -->
+                <img src="img/blog/2.jpg" alt="blog post">
+              </a>
+              <!-- post cover end -->
+              <!-- post description -->
+              <div class="art-post-description">
+                <!-- title -->
+                <a href="#.">
+                  <h5 class="mb-15">Blog post title</h5>
+                </a>
+                <!-- text -->
+                <div class="mb-15">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet!</div>
+                <!-- link -->
+                <a href="#." class="art-link art-color-link art-w-chevron">Read more</a>
+              </div>
+              <!-- post description end -->
+            </div>
+            <!-- blog post card end -->
+
+          </div>
+          <!-- slide end -->
+          <!-- slide -->
+          <div class="swiper-slide">
+
+            <!-- blog post card -->
+            <div class="art-a art-blog-card">
+              <!-- post cover -->
+              <a href="#." class="art-port-cover">
+                <!-- img -->
+                <img src="img/blog/3.jpg" alt="blog post">
+              </a>
+              <!-- post cover end -->
+              <!-- post description -->
+              <div class="art-post-description">
+                <!-- title -->
+                <a href="#.">
+                  <h5 class="mb-15">Blog post title</h5>
+                </a>
+                <!-- text -->
+                <div class="mb-15">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet!</div>
+                <!-- link -->
+                <a href="#." class="art-link art-color-link art-w-chevron">Read more</a>
+              </div>
+              <!-- post description end -->
+            </div>
+            <!-- blog post card end -->
+
+          </div>
+          <!-- slide end -->
+          <!-- slide -->
+          <div class="swiper-slide">
+
+            <!-- blog post card -->
+            <div class="art-a art-blog-card">
+              <!-- post cover -->
+              <a href="#." class="art-port-cover">
+                <!-- img -->
+                <img src="img/blog/4.jpg" alt="blog post">
+              </a>
+              <!-- post cover end -->
+              <!-- post description -->
+              <div class="art-post-description">
+                <!-- title -->
+                <a href="#.">
+                  <h5 class="mb-15">Blog post title</h5>
+                </a>
+                <!-- text -->
+                <div class="mb-15">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet!</div>
+                <!-- link -->
+                <a href="#." class="art-link art-color-link art-w-chevron">Read more</a>
+              </div>
+              <!-- post description end -->
+            </div>
+            <!-- blog post card end -->
+
+          </div>
+          <!-- slide end -->
+          <!-- slide -->
+          <div class="swiper-slide">
+
+            <!-- blog post card -->
+            <div class="art-a art-blog-card">
+              <!-- post cover -->
+              <a href="#." class="art-port-cover">
+                <!-- img -->
+                <img src="img/blog/5.jpg" alt="blog post">
+              </a>
+              <!-- post cover end -->
+              <!-- post description -->
+              <div class="art-post-description">
+                <!-- title -->
+                <a href="#.">
+                  <h5 class="mb-15">Blog post title</h5>
+                </a>
+                <!-- text -->
+                <div class="mb-15">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet!</div>
+                <!-- link -->
+                <a href="#." class="art-link art-color-link art-w-chevron">Read more</a>
+              </div>
+              <!-- post description end -->
+            </div>
+            <!-- blog post card end -->
+
+          </div>
+          <!-- slide end -->
+        </div>
+        <!-- slider wrapper end -->
+      </div>
+      <!-- slider container end -->
+
+    </div>
+    <!-- col end -->
+
+    <!-- col -->
+    <div class="col-lg-12">
+
+      <!-- slider navigation -->
+      <div class="art-slider-navigation">
+
+        <!-- left side -->
+        <div class="art-sn-left">
+
+          <!-- slider pagination -->
+          <div class="swiper-pagination"></div>
+
+        </div>
+        <!-- left side end -->
+
+        <!-- right side -->
+        <div class="art-sn-right">
+
+          <!-- slider navigation -->
+          <div class="art-slider-nav-frame">
+            <!-- prev -->
+            <div class="art-slider-nav art-blog-swiper-prev"><i class="fas fa-chevron-left"></i></div>
+            <!-- next -->
+            <div class="art-slider-nav art-blog-swiper-next"><i class="fas fa-chevron-right"></i></div>
+          </div>
+          <!-- slider navigation -->
+
+        </div>
+        <!-- right side end -->
+
+      </div>
+      <!-- slider navigation end -->
+
+    </div>
+    <!-- col end -->
+
+  </div>
+  <!-- row end -->
+
+</div>
+<!-- container end -->
+
+<!-- container -->
+<div class="container-fluid">
+
+  <!-- row -->
+  <div class="row p-30-0">
+
+    <!-- col -->
+    <div class="col-lg-12">
+
+      <!-- section title -->
+      <div class="art-section-title">
+        <!-- title frame -->
+        <div class="art-title-frame">
+          <!-- title -->
+          <h4>Contactanos</h4>
+        </div>
+        <!-- title frame end -->
+      </div>
+      <!-- section title end -->
+
+      <!-- contact form frame -->
+      <div class="art-a art-card">
+
+        <!-- contact form -->
+        <form id="form" class="art-contact-form">
+          <!-- form field -->
+          <div class="art-form-field">
+            <!-- name input -->
+            <input id="name" name="name" class="art-input" type="text" placeholder="Name" required>
+            <!-- label -->
+            <label for="name"><i class="fas fa-user"></i></label>
+          </div>
+          <!-- form field end -->
+          <!-- form field -->
+          <div class="art-form-field">
+            <!-- email input -->
+            <input id="email" name="email" class="art-input" type="email" placeholder="Email" required>
+            <!-- label -->
+            <label for="email"><i class="fas fa-at"></i></label>
+          </div>
+          <!-- form field end -->
+          <!-- form field -->
+          <div class="art-form-field">
+            <!-- message textarea -->
+            <textarea id="message" name="text" class="art-input" placeholder="Message" required></textarea>
+            <!-- label -->
+            <label for="message"><i class="far fa-envelope"></i></label>
+          </div>
+          <!-- form field end -->
+          <!-- button -->
+          <div class="art-submit-frame">
+            <button class="art-btn art-btn-md art-submit" type="submit"><span>Send message</span></button>
+            <!-- success -->
+            <div class="art-success">Success <i class="fas fa-check"></i></div>
+          </div>
+        </form>
+        <!-- contact form end -->
+
+      </div>
+      <!-- contact form frame end -->
+
+    </div>
+    <!-- col end -->
+
+  </div>
+  <!-- row end -->
+
+</div>
+<!-- container end -->
+
+<!-- container -->
+<div class="container-fluid">
+
+  <!-- row -->
+  <div class="row">
+
+    <!-- col -->
+    <div class="col-6 col-lg-3">
+      <!-- brand -->
+      <img class="art-brand" src="img/brands/1.png" alt="brand">
+    </div>
+    <!-- col end -->
+
+    <!-- col -->
+    <div class="col-6 col-lg-3">
+      <!-- brand -->
+      <img class="art-brand" src="img/brands/2.png" alt="brand">
+    </div>
+    <!-- col end -->
+
+    <!-- col -->
+    <div class="col-6 col-lg-3">
+      <!-- brand -->
+      <img class="art-brand" src="img/brands/3.png" alt="brand">
+    </div>
+    <!-- col end -->
+
+    <!-- col -->
+    <div class="col-6 col-lg-3">
+      <!-- brand -->
+      <img class="art-brand" src="img/brands/1.png" alt="brand">
+    </div>
+    <!-- col end -->
+
+  </div>
+  <!-- row end -->
+
+</div>
+<!-- container end -->
+
+<!-- container -->
+<div class="container-fluid">
+
+  <!-- footer -->
+  <footer>
+    <!-- copyright -->
+    <div>© 2020 Artur Carter</div>
+    <!-- author ( Please! Do not delete it. You are awesome! :) -->
+    <div>Template author:&#160; <a href="https://themeforest.net/user/millerdigitaldesign" target="_blank">Nazar
+        Miller</a></div>
+  </footer>
+  <!-- footer end -->
+
+</div>
+<!-- container end -->

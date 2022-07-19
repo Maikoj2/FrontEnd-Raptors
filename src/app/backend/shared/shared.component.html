@@ -1,0 +1,9 @@
+
+    <app-sidebar (iconNavbarSidenav)=" sidenav = $event "  (iconxSidenav)="iconSidenav = $event"></app-sidebar>
+    <main id ="main" class="main-content position-relative max-height-vh-100 h-100 border-radius-lg ps">
+        <app-header [sidenav]="sidenav" [iconSidenav]="iconSidenav"></app-header>
+        <app-pages></app-pages>
+        
+        
+    </main>
+ 
